@@ -500,7 +500,7 @@ ENTRIES 152.32.138.156/32       False   -1      deny    14
 ```
 
 ## Call確認
--以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
+- 以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
 - OCN Service Stg JapanWestの場合
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://osaka-stg-ocngw.apigwx.com/v1/healthcheck
@@ -527,7 +527,7 @@ ENTRIES 152.32.138.156/32       False   -1      deny    14
 ---
 本切り戻し手順では、追記したIPブロックリストを無効化した後、ACL適用を行うことで切り戻しを行う
 
--　追記したIPブロックリストを無効化するため、以下のようにstage1/eks.tfに定義する。
+- 追記したIPブロックリストを無効化するため、以下のようにstage1/eks.tfに定義する。
 
 ```
 resource "aws_default_network_acl" "cluster_acl" {
