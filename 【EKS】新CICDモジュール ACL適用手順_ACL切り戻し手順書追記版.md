@@ -733,4 +733,4 @@ resource "aws_default_network_acl" "cluster_acl" {
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://tokyo-pro-ocngw.apigwx.com/v1/healthcheck
   ```
-  ※直し⇒[200 OK]が出力される事
+  ⇒["healthcheck": "true"]が出力される事
