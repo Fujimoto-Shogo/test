@@ -498,6 +498,30 @@ ENTRIES 52.156.24.42/32 False   -1      deny    12
 ENTRIES 107.150.112.193/32      False   -1      deny    13
 ENTRIES 152.32.138.156/32       False   -1      deny    14
 ```
+
+## Call確認
+-以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
+- OCN Service Stg JapanWestの場合
+  ```
+  curl -H "User-Agent: Datadog/Synthetics" https://osaka-stg-ocngw.apigwx.com/v1/healthcheck
+  ```
+
+- OCN Service Prd JapanWestの場合
+  ```
+  curl -H "User-Agent: Datadog/Synthetics" https://osaka-pro-ocngw.apigwx.com/v1/healthcheck
+  ```
+
+- OCN Service Stg JapanEastの場合
+  ```
+  curl -H "User-Agent: Datadog/Synthetics" https://tokyo-stg-ocngw.apigwx.com/v1/healthcheck
+  ```
+
+- OCN Service Prd JapanEastの場合
+  ```
+  curl -H "User-Agent: Datadog/Synthetics" https://tokyo-pro-ocngw.apigwx.com/v1/healthcheck
+  ```
+  ※直し⇒[200 OK]が出力される事
+
 ---
 ## ACL切り戻し手順
 ---
@@ -709,4 +733,4 @@ resource "aws_default_network_acl" "cluster_acl" {
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://tokyo-pro-ocngw.apigwx.com/v1/healthcheck
   ```
-  ⇒[200 OK]が出力される事
+  ※直し⇒[200 OK]が出力される事
