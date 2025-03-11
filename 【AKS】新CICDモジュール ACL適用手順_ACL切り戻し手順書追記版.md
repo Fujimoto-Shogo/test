@@ -722,5 +722,5 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://manapoke.apigwx.com/v1/healthcheck
   ```
-  ※直し⇒[200 OK]が出力される事
+  ⇒["healthcheck": "true"]が出力される事
   
