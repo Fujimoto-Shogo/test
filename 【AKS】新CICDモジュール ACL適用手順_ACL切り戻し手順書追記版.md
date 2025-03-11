@@ -477,7 +477,7 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
 ```
 
 ## Call確認　※直し
--以下コマンドでヘルスチェック先をコールし、403、404が表示された時にACL切り戻し手順を実施
+以下コマンドでヘルスチェック先をコールし、403、404が表示された時にACL切り戻し手順を実施
 - apg-096bdef8-c965の場合
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://manabipocket.apigwx.com/v1/healthcheck
