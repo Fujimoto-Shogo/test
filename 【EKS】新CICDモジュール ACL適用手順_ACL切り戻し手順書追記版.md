@@ -500,7 +500,7 @@ ENTRIES 152.32.138.156/32       False   -1      deny    14
 ```
 
 ## 動作確認
--以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
+以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
 - OCN Service Stg JapanWestの場合
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://osaka-stg-ocngw.apigwx.com/v1/healthcheck
@@ -714,7 +714,7 @@ resource "aws_default_network_acl" "cluster_acl" {
   ⇒[Apply Complate!]が出力される事
   
 ## 動作確認
--以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
+以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
 - OCN Service Stg JapanWestの場合
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://osaka-stg-ocngw.apigwx.com/v1/healthcheck
