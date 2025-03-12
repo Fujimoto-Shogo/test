@@ -737,7 +737,7 @@ resource "aws_default_network_acl" "cluster_acl" {
   ```
   aws ec2 describe-network-acls --output text --network-acl-ids acl-01f6b0e36a38cf731
   ```
-⇒追加したACLが消えていること。
+⇒追加したACL(RuleID:1~14)が消えていること。
 
 ### Call確認
 以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
