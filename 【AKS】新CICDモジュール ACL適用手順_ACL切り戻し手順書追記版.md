@@ -499,7 +499,7 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
 本切り戻し手順では、追記したIPブロックリストを無効化した後、ACL適用を行うことで切り戻しを行う
 
 ### aks.tfに追記した記述を無効化したACLを定義する
-追記したIPブロックリストを無効化するため、以下のようにstage1/aks.tfに定義する。
+追記したIPブロックリストを無効化するため、stage1/aks.tfに追記した記述を以下のようにコメントアウトする。
 
 * apg-096bdef8-c965の場合
 ```
@@ -726,7 +726,7 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
   ```
   az network nsg rule list -o table -g mc_apg-8e7953c5-a1c7-rg_apg-8e7953c5-a1c7_japaneast --nsg-name aks-agentpool-41228824-nsg
   ```
-⇒追加したACL消えていること。
+⇒追加したACLが消えていること。
 
 ### Call確認
 以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
