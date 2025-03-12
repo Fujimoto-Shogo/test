@@ -499,8 +499,8 @@ ENTRIES 107.150.112.193/32      False   -1      deny    13
 ENTRIES 152.32.138.156/32       False   -1      deny    14
 ```
 
-## Call確認 ※直し
-以下コマンドでヘルスチェック先をコールし、403、404が出た場合、ACL切り戻し手順えを実施
+## 動作確認
+-以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
 - OCN Service Stg JapanWestの場合
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://osaka-stg-ocngw.apigwx.com/v1/healthcheck
@@ -520,7 +520,7 @@ ENTRIES 152.32.138.156/32       False   -1      deny    14
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://tokyo-pro-ocngw.apigwx.com/v1/healthcheck
   ```
-  ※直し⇒[200 OK]が出力される事
+  ⇒["healthcheck": "true"]が出力される事
 
 ---
 ## ACL切り戻し手順
