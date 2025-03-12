@@ -726,7 +726,7 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
   ```
   az network nsg rule list -o table -g mc_apg-8e7953c5-a1c7-rg_apg-8e7953c5-a1c7_japaneast --nsg-name aks-agentpool-41228824-nsg
   ```
-⇒追加したACLが消えていること。
+⇒追加したACL(RuleID:100)が消えていること。
 
 ### Call確認
 以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
