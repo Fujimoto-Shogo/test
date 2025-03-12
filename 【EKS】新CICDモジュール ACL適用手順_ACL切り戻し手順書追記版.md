@@ -503,8 +503,7 @@ ENTRIES 52.156.24.42/32 False   -1      deny    12
 ENTRIES 107.150.112.193/32      False   -1      deny    13
 ENTRIES 152.32.138.156/32       False   -1      deny    14
 ```
-
-## Call確認
+### Call確認
 以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
 - OCN Service Stg JapanWestの場合
   ```
@@ -719,6 +718,28 @@ resource "aws_default_network_acl" "cluster_acl" {
   ⇒[Apply Complate!]が出力される事
   
 ## 動作確認
+追加したACLが削除されているか確認を行う
+- OCN Service Stg JapanWestの場合
+  ```
+  aws ec2 describe-network-acls --output text --network-acl-ids acl-0a85f9a6785533fd1
+  ```
+
+- OCN Service Prd JapanWestの場合
+  ```
+  aws ec2 describe-network-acls --output text --network-acl-ids acl-0aafa23f6e087ee42
+  ```
+
+- OCN Service Stg JapanEastの場合
+  ```
+  aws ec2 describe-network-acls --output text --network-acl-ids acl-0a6b3b229ac4c8ac3
+  ```
+
+- OCN Service Prd JapanEastの場合
+  ```
+  aws ec2 describe-network-acls --output text --network-acl-ids acl-01f6b0e36a38cf731
+  ```
+⇒想定通りのENTRIESが出力されること。
+
 以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
 - OCN Service Stg JapanWestの場合
   ```
