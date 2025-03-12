@@ -511,7 +511,7 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
     resource_group_name = "mc_apg-096bdef8-c965-rg_apg-096bdef8-c965_japaneast"
 
     security_rule = [
-#       {
+#      {
 #        access                                     = "Deny"
 #        destination_address_prefix                 = "*"
 #        destination_address_prefixes               = []
@@ -528,7 +528,7 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
 #        source_port_range                          = "*"
 #        source_port_ranges                         = []
 #        description                                = ""
-#       },
+#      },
       {
         access                                     = "Allow"
         destination_address_prefix                 = "20.210.14.38"
@@ -615,7 +615,7 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
     resource_group_name = "mc_apg-8e7953c5-a1c7-rg_apg-8e7953c5-a1c7_japaneast"
 
     security_rule = [
- #      {
+ #     {
  #       access                                     = "Deny"
  #       destination_address_prefix                 = "*"
  #       destination_address_prefixes               = []
@@ -632,7 +632,7 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
  #       source_port_range                          = "*"
  #       source_port_ranges                         = []
  #       description                                = ""
- #      },
+ #     },
       {
         access                                     = "Allow"
         destination_address_prefix                 = "20.210.14.38"
