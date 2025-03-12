@@ -567,146 +567,146 @@ resource "aws_default_network_acl" "cluster_acl" {
      rule_no         = 100
      to_port         = 0
   }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "20.48.18.209/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 1
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "20.48.41.226/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 2
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "20.78.142.129/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 3
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "20.89.244.233/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 4
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "20.104.211.17/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 5
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "20.151.230.239/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 6
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "20.222.104.90/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 7
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "20.243.24.205/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 8
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "20.243.163.24/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 9
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "40.74.64.226/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 10
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "45.153.129.75/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 11
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "52.156.24.42/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 12
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "107.150.112.193/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 13
-#    to_port          = 0
-#  }
-#  ingress {
-#    action           = "deny"
-#    cidr_block       = "152.32.138.156/32"
-#    from_port        = 0
-#    icmp_code        = 0
-#    icmp_type        = 0
-#    protocol         = "-1"
-#    rule_no          = 14
-#    to_port          = 0
-#  }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "20.48.18.209/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 1
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "20.48.41.226/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 2
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "20.78.142.129/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 3
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "20.89.244.233/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 4
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "20.104.211.17/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 5
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "20.151.230.239/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 6
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "20.222.104.90/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 7
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "20.243.24.205/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 8
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "20.243.163.24/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 9
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "40.74.64.226/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 10
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "45.153.129.75/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 11
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "52.156.24.42/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 12
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "107.150.112.193/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 13
+#   to_port          = 0
+# }
+# ingress {
+#   action           = "deny"
+#   cidr_block       = "152.32.138.156/32"
+#   from_port        = 0
+#   icmp_code        = 0
+#   icmp_type        = 0
+#   protocol         = "-1"
+#   rule_no          = 14
+#   to_port          = 0
+# }
 }
 
 ```
