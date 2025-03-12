@@ -531,7 +531,7 @@ ENTRIES 152.32.138.156/32       False   -1      deny    14
 本切り戻し手順では、追記したIPブロックリストを無効化した後、ACL適用を行うことで切り戻しを行う
 
 ### eks.tfに追記した記述を無効化したACLを定義する
-追記したIPブロックリストを無効化するため、以下のようにstage1/eks.tfに定義する。
+追記したIPブロックリストを無効化するため、stage1/eks.tfに追記した記述を以下のようにコメントアウトする。
 
 ```
 resource "aws_default_network_acl" "cluster_acl" {
@@ -737,7 +737,7 @@ resource "aws_default_network_acl" "cluster_acl" {
   ```
   aws ec2 describe-network-acls --output text --network-acl-ids acl-01f6b0e36a38cf731
   ```
-⇒追加したACL消えていること。
+⇒追加したACLが消えていること。
 
 ### Call確認
 以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
