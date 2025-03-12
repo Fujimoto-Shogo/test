@@ -494,8 +494,8 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
 ---
 本切り戻し手順では、追記したIPブロックリストを無効化した後、ACL適用を行うことで切り戻しを行う
 
-
-- 追記したIPブロックリストを無効化するため、以下のようにstage1/aks.tfに定義する。
+### aks.tfにACLを定義する
+追記したIPブロックリストを無効化するため、以下のようにstage1/aks.tfに定義する。
 
 * apg-096bdef8-c965の場合
 ```
