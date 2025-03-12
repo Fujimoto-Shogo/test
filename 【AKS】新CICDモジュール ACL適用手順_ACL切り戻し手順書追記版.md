@@ -477,7 +477,7 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
 ```
 
 ## 動作確認
--以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
+以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
 - apg-096bdef8-c965の場合
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://manabipocket.apigwx.com/v1/healthcheck
@@ -712,7 +712,7 @@ DDoS-Protection  MC_qax-5f1af200-3f80-rg_qax-5f1af200-3f80_japaneast  100   *   
   ⇒[Apply Complate!]が出力される事
   
 ## 動作確認
--以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
+以下コマンドでヘルスチェック先をコールし、問題なく疎通ができることを確認
 - apg-096bdef8-c965の場合
   ```
   curl -H "User-Agent: Datadog/Synthetics" https://manabipocket.apigwx.com/v1/healthcheck
