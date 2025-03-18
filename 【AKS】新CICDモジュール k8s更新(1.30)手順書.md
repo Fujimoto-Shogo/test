@@ -264,7 +264,7 @@ The behavior of this command has been altered by the following extension: aks-pr
     kubectl get all -n apigee
     ```
   * ポッドの動作確認
-    下記コマンドを実行し、k8sのポッドが正常に動作している事
+    下記コマンドを実行し、k8sのポッドが正常に動作している事  
     ※STATUS : Completed or Runningであること  
     ※READY :  Pod内のすべてのコンテナが立ち上がっている事 (1/1,2/2 等)
     ```
